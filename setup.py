@@ -29,16 +29,17 @@ setup(
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     ],
     include_package_data = True,
-#    package_data = {
-#        "i18ntext": [
+    package_data = {
+        "i18ntext": [
+            "templatetags/*.py",
 #            "templates/*.html",
 #            "locale/*/LC_MESSAGES/*.po",
 #            "locale/*/LC_MESSAGES/*.mo",
 #            "static/js/*",
 #            "static/css/*.css",
 #            "static/img/*"
-#        ],
-#    },
+        ],
+    },
     zip_safe=False,
     install_requires=['django>1.4,<1.6',
                       'django-modeltranslation',
