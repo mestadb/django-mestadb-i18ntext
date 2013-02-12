@@ -10,7 +10,6 @@ setup(
     name = 'django-i18ntext',
     version = '0.1.0',
     packages = ['i18ntext'],
-    include_package_data = True,
     license = 'MIT License', # example license
     description = 'Multilingual texts for Django apps.',
     long_description = README,
@@ -29,4 +28,19 @@ setup(
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     ],
+    include_package_data = True,
+#    package_data = {
+#        "i18ntext": [
+#            "templates/*.html",
+#            "locale/*/LC_MESSAGES/*.po",
+#            "locale/*/LC_MESSAGES/*.mo",
+#            "static/js/*",
+#            "static/css/*.css",
+#            "static/img/*"
+#        ],
+#    },
+    zip_safe=False,
+    install_requires=['django>1.4,<1.6',
+                      'django-modeltranslation',
+                     ],
 )
