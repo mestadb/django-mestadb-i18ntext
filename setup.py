@@ -41,7 +41,8 @@ setup(
         ],
     },
     zip_safe=False,
-    install_requires=['django>1.4,<1.6',
-                      'django-modeltranslation',
-                     ],
+    install_requires=[
+        #'django>1.4,<1.6',
+        #'django-modeltranslation',
+    ],
 )
